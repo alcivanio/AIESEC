@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="07s-eH-d8r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Opportunities-->
+        <scene sceneID="UPZ-z4-8nq">
+            <objects>
+                <viewController id="7kU-C9-4Gx" customClass="OpportunitiesListViewController" customModule="AIESEC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="reF-N4-pf2"/>
+                        <viewControllerLayoutGuide type="bottom" id="wZg-mS-MPY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RBC-cG-K7R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FqB-r7-dFL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7kU-C9-4Gx" id="iDm-Wd-qLM"/>
+                                    <outlet property="delegate" destination="7kU-C9-4Gx" id="pNP-Za-uW9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FqB-r7-dFL" firstAttribute="leading" secondItem="RBC-cG-K7R" secondAttribute="leading" id="FQg-IW-bTv"/>
+                            <constraint firstItem="FqB-r7-dFL" firstAttribute="top" secondItem="RBC-cG-K7R" secondAttribute="top" id="Oi0-eL-JB4"/>
+                            <constraint firstAttribute="trailing" secondItem="FqB-r7-dFL" secondAttribute="trailing" id="gc5-xd-1Nk"/>
+                            <constraint firstItem="wZg-mS-MPY" firstAttribute="top" secondItem="FqB-r7-dFL" secondAttribute="bottom" id="uFz-Vk-H0G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Opportunities" id="LpW-PI-01E">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="v2S-P4-hLo">
+                            <view key="customView" contentMode="scaleToFill" id="PGN-Ae-fGW">
+                                <rect key="frame" x="276" y="3" width="83" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe9-Jm-SZn">
+                                        <rect key="frame" x="43" y="0.0" width="40" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="AmZ-5y-rEd"/>
+                                        </constraints>
+                                        <state key="normal" image="filter-icon"/>
+                                    </button>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-sY-ABz">
+                                        <rect key="frame" x="21" y="7" width="22" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogr-Lq-gG5">
+                                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.46666666666666667" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ogr-Lq-gG5" firstAttribute="leading" secondItem="v5e-sY-ABz" secondAttribute="leading" id="Qir-cb-r5m"/>
+                                            <constraint firstAttribute="bottom" secondItem="ogr-Lq-gG5" secondAttribute="bottom" id="R8O-XN-IKG"/>
+                                            <constraint firstAttribute="width" constant="22" id="bBX-Md-odN"/>
+                                            <constraint firstAttribute="height" constant="22" id="e0Z-bB-5rd"/>
+                                            <constraint firstItem="ogr-Lq-gG5" firstAttribute="top" secondItem="v5e-sY-ABz" secondAttribute="top" id="ww0-LU-noD"/>
+                                            <constraint firstAttribute="trailing" secondItem="ogr-Lq-gG5" secondAttribute="trailing" id="zhS-ud-uHG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pe9-Jm-SZn" firstAttribute="top" secondItem="PGN-Ae-fGW" secondAttribute="top" id="7Lp-Ij-w4o"/>
+                                    <constraint firstItem="pe9-Jm-SZn" firstAttribute="leading" secondItem="v5e-sY-ABz" secondAttribute="trailing" id="C1b-FK-Jn7"/>
+                                    <constraint firstItem="v5e-sY-ABz" firstAttribute="centerY" secondItem="pe9-Jm-SZn" secondAttribute="centerY" id="V1V-U1-ewx"/>
+                                    <constraint firstAttribute="trailing" secondItem="pe9-Jm-SZn" secondAttribute="trailing" id="e6R-D4-Y8U"/>
+                                    <constraint firstAttribute="bottom" secondItem="pe9-Jm-SZn" secondAttribute="bottom" id="j1T-49-Agp"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="FqB-r7-dFL" id="ubS-wp-Glc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p76-9x-CGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="169.56521739130437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6IF-mx-1qM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="07s-eH-d8r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="I0U-n9-YdI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7kU-C9-4Gx" kind="relationship" relationship="rootViewController" id="ugH-qj-dQl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prM-rL-ulB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199.19999999999999" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filter-icon" width="26" height="23"/>
+    </resources>
+</document>

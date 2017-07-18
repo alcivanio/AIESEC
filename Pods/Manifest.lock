@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.3.0)
+  - AlamofireObjectMapper (4.0.1):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - BFPaperTableViewCell (2.3.10)
+  - MaterialComponents/ActivityIndicator (20.1.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/RTL
+  - MaterialComponents/private/Application (20.1.1)
+  - MaterialComponents/private/RTL (20.1.1)
+  - ObjectMapper (2.2.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - UIScrollView-InfiniteScroll (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - BFPaperTableViewCell
+  - MaterialComponents/ActivityIndicator
+  - SDWebImage
+  - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
+  BFPaperTableViewCell: 3b3ca0f60ec7fac7ebc1f97095db25b6042ddf44
+  MaterialComponents: 26372b7d42f8057bc467a796dea73cf62abc03ed
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  UIScrollView-InfiniteScroll: d26885be71caca7485cdb37eab513a8f89036bb0
+
+PODFILE CHECKSUM: eb15c865ee1de535aeb8a997d7fec20d5f7aecd1
+
+COCOAPODS: 1.1.1

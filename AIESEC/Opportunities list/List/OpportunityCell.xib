@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+        <array key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OpportunityCell" customModule="AIESEC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTU-y7-JCi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pf0-HB-Avy">
+                    <rect key="frame" x="10" y="274.5" width="355" height="10"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="jQ0-HI-Hxz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGS-LU-rl2">
+                    <rect key="frame" x="10" y="0.0" width="355" height="282.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dim-u5-nBm">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="208"/>
+                            <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dim-u5-nBm" secondAttribute="height" multiplier="75:44" id="QKm-dD-2vP"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[title]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnr-3h-XnV">
+                            <rect key="frame" x="10" y="218" width="335" height="16"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[location]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4J-cE-1dW">
+                            <rect key="frame" x="10" y="256" width="335" height="14.5"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[company]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhD-xw-oYt">
+                            <rect key="frame" x="10" y="238" width="335" height="14.5"/>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yke-9E-nmq" customClass="MDCActivityIndicator">
+                            <rect key="frame" x="161" y="88" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="A2h-1C-5xn"/>
+                                <constraint firstAttribute="height" constant="32" id="jUE-9g-RaH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yke-9E-nmq" firstAttribute="centerY" secondItem="dim-u5-nBm" secondAttribute="centerY" id="2Om-lN-GTs"/>
+                        <constraint firstItem="fnr-3h-XnV" firstAttribute="top" secondItem="dim-u5-nBm" secondAttribute="bottom" constant="10" id="3G3-Jg-1dO"/>
+                        <constraint firstItem="yke-9E-nmq" firstAttribute="centerX" secondItem="dim-u5-nBm" secondAttribute="centerX" id="5Ja-ex-Dhk"/>
+                        <constraint firstItem="fnr-3h-XnV" firstAttribute="leading" secondItem="LGS-LU-rl2" secondAttribute="leading" constant="10" id="Kx9-a6-aUr"/>
+                        <constraint firstItem="WhD-xw-oYt" firstAttribute="top" secondItem="fnr-3h-XnV" secondAttribute="bottom" constant="4" id="NBO-62-xpj"/>
+                        <constraint firstItem="dim-u5-nBm" firstAttribute="top" secondItem="LGS-LU-rl2" secondAttribute="top" id="Oqo-kR-1AK"/>
+                        <constraint firstItem="WhD-xw-oYt" firstAttribute="leading" secondItem="LGS-LU-rl2" secondAttribute="leading" constant="10" id="T8H-3J-3RF"/>
+                        <constraint firstAttribute="bottom" secondItem="y4J-cE-1dW" secondAttribute="bottom" constant="12" id="VLH-Rs-qbE"/>
+                        <constraint firstItem="y4J-cE-1dW" firstAttribute="top" secondItem="WhD-xw-oYt" secondAttribute="bottom" constant="4" id="aR4-Ii-F76"/>
+                        <constraint firstItem="y4J-cE-1dW" firstAttribute="leading" secondItem="LGS-LU-rl2" secondAttribute="leading" constant="10" id="dpF-2r-8Lt"/>
+                        <constraint firstAttribute="trailing" secondItem="y4J-cE-1dW" secondAttribute="trailing" constant="10" id="luY-n2-crd"/>
+                        <constraint firstAttribute="trailing" secondItem="dim-u5-nBm" secondAttribute="trailing" id="mwJ-qm-kni"/>
+                        <constraint firstItem="dim-u5-nBm" firstAttribute="leading" secondItem="LGS-LU-rl2" secondAttribute="leading" id="nV5-9A-38M"/>
+                        <constraint firstAttribute="height" priority="100" constant="302" id="nbN-OX-Gb5"/>
+                        <constraint firstAttribute="trailing" secondItem="WhD-xw-oYt" secondAttribute="trailing" constant="10" id="p8d-BI-rjs"/>
+                        <constraint firstAttribute="trailing" secondItem="fnr-3h-XnV" secondAttribute="trailing" constant="10" id="qhl-Pz-MYl"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XTU-y7-JCi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3La-74-f9n"/>
+                <constraint firstItem="XTU-y7-JCi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CFj-Sy-6CF"/>
+                <constraint firstItem="Pf0-HB-Avy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="FGM-pM-iil"/>
+                <constraint firstAttribute="bottom" secondItem="LGS-LU-rl2" secondAttribute="bottom" priority="100" constant="12" id="SCI-YD-qMf"/>
+                <constraint firstAttribute="trailing" secondItem="XTU-y7-JCi" secondAttribute="trailing" id="WpL-fi-o73"/>
+                <constraint firstAttribute="trailing" secondItem="LGS-LU-rl2" secondAttribute="trailing" constant="10" id="XKg-3y-AcS"/>
+                <constraint firstAttribute="bottom" secondItem="XTU-y7-JCi" secondAttribute="bottom" id="fY0-T5-7Lh"/>
+                <constraint firstItem="LGS-LU-rl2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="k0G-Pe-Mfg"/>
+                <constraint firstItem="LGS-LU-rl2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kW6-zf-DQI"/>
+                <constraint firstAttribute="trailing" secondItem="Pf0-HB-Avy" secondAttribute="trailing" constant="10" id="ksq-4H-DDy"/>
+                <constraint firstItem="Pf0-HB-Avy" firstAttribute="bottom" secondItem="LGS-LU-rl2" secondAttribute="bottom" constant="2" id="oEc-sH-eG8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coverImage" destination="dim-u5-nBm" id="myg-23-Oby"/>
+                <outlet property="description1" destination="WhD-xw-oYt" id="8Xg-ke-Q44"/>
+                <outlet property="description2" destination="y4J-cE-1dW" id="7At-M9-Tqs"/>
+                <outlet property="imageLoadingIndicator" destination="yke-9E-nmq" id="Csi-Rl-YL4"/>
+                <outlet property="title" destination="fnr-3h-XnV" id="Nt5-ub-6sW"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="215.5"/>
+        </view>
+    </objects>
+</document>
